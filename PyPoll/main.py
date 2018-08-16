@@ -9,11 +9,11 @@ file2 = 'raw_data/election_data_2.csv'
 # open the file in "read" mode ('r') and store contents in variables edata1, #  edata2
 
 #with open(file1, 'r') as text:
- #   print (text)
+#    print (text)
     
 #    edata1 = text.read()  #stored file text as edata1
     
-   # print(edata1)
+#    print(edata1)
     
 #print(type(edata1))     #edata1 is a string and not a dataframe
 
@@ -28,3 +28,18 @@ with open(file1, newline ='') as edata1:
     
     for row in csvreader:
         print(row)
+        
+         
+print("Election Results")            
+print("----------------------------")
+print("Total Votes:")
+print("Rogers:")
+print("Gomez:")
+print("Brentwood:")
+print("Higgins:")
+print("----------------------------")
+print("Winner:")
+print("----------------------------")
+
+        
+        
