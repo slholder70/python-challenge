@@ -28,6 +28,17 @@ with open(file1, newline ='') as edata1:
     
     for row in csvreader:
         print(row)
+#Assignment of variables for calculations        
+#The total number of votes cast
+vote_ct = 0
+#A complete list of candidates who received votes
+listofcand = []
+#The list of percentage of votes each candidate won
+vote_percentlist = []
+#The list of total number of votes each candidate won
+votes_per_candlist = []
+#The winner of the election based on popular vote.
+election_winner = []
         
          
 print("Election Results")            
