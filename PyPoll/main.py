@@ -24,7 +24,7 @@ with open(file1, newline ='') as edata1:
     #CSV reader with delimiter and varable holding contents
     
     csvreader = csv.reader(edata1, delimiter = ',')
-    print(csvreader)
+#   print(csvreader)
     
     for row in csvreader:
         print(row)
@@ -33,6 +33,7 @@ with open(file1, newline ='') as edata1:
 print("Election Results")            
 print("----------------------------")
 print("Total Votes:")
+print("----------------------------")
 print("Rogers:")
 print("Gomez:")
 print("Brentwood:")
