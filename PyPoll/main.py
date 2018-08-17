@@ -19,15 +19,17 @@ file2 = 'raw_data/election_data_2.csv'
 
 #Method 2 for improved reading of CSV module
 
-with open(file1, newline ='') as edata1:
+with open(file2, newline ='') as edata:
     
     #CSV reader with delimiter and varable holding contents
     
-    csvreader = csv.reader(edata1, delimiter = ',')
+    edata1 = csv.reader(edata, delimiter = ',')
 #   print(csvreader)
     
-    for row in csvreader:
-        print(row)
+    for row in edata1:
+        mylist1 = row[0]
+        
+print(mylist1)
 #Assignment of variables for calculations        
 #The total number of votes cast
 vote_ct = 0
