@@ -46,11 +46,27 @@ with open(file1, newline ='') as edata:
             #adding vote to candidate in list by indexing the lists
             votes_per_candlist[int(listofcand.index(row[2]))] = int(votes_per_candlist[int(listofcand.index(row[2]))]) + 1 
             
-
-#with open(file2,  newline ='') as edata:
+#Repeat steps for file2
+            
+            
+with open(file2, newline ='') as edata:
     
-#    edata2 = csv.reader(edata, delimeter = ',')
-#    next(edata2)
+    #CSV reader with delimiter and varable holding contents
+    
+    edata2 = csv.reader(edata, delimiter = ',')
+    next(edata2)    #skip header 
+    for row in edata2:
+        vote_ct += 1
+        
+        if row[2] not in listofcand:
+            listofcand.append(row[2])   #adding new name to listofcand
+            votes_per_candlist.append(1)  #adding one vote to the new name added to votes list
+            
+        else:
+            #list_index =  #index to pair listofcand and votes_per_candlist
+            #adding vote to candidate in list by indexing the lists
+            votes_per_candlist[int(listofcand.index(row[2]))] = int(votes_per_candlist[int(listofcand.index(row[2]))]) + 1
+            
 
         
          
